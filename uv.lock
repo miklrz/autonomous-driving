@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = "==3.11.15"
+
+[[package]]
+name = "autonomous-driving"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "carla" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "carla", specifier = ">=0.9.16" }]
+
+[[package]]
+name = "carla"
+version = "0.9.16"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/22/00/986260e4d35444a3a88188deed7fa1b6739b20778d1899fe4b4975121171/carla-0.9.16-cp311-cp311-manylinux_2_31_x86_64.whl", hash = "sha256:9ca1e0793a5f453375a8bc93d85d43cc5629b3342bafe10ab8ebb1ef4fb111dc", size = 34196201, upload-time = "2025-09-14T07:54:42.834Z" },
+    { url = "https://files.pythonhosted.org/packages/96/de/ff523c1d3406de2e30beba69cf58eac354c2ce6fe3e233bfb881621a2764/carla-0.9.16-cp311-cp311-win_amd64.whl", hash = "sha256:9d8bca9ea3a3bccd691536b17f6f278335ce9b6af7883612aa0800929b388ed1", size = 5034970, upload-time = "2025-09-14T07:54:45.36Z" },
+]
